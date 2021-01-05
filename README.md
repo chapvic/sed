@@ -9,3 +9,5 @@ in the Windows operating system.
 
 Build is easy. Just run `nmake` in the source directory
 and enjoy.
+
+Release can be found here - https://github.com/chapvic/sed/releases/tag/4.2.1
