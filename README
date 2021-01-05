@@ -1,0 +1,8 @@
+Sed for Windows, v4.2.1 (based on GNU Sed 4.2.1)
+
+This is Windows version of the GNU implementation of sed,
+the Unix stream editor. Based on the original GNU sed and
+adapted for MSVC compiler.
+
+The source code contains some changes to work correctly
+in the Windows operating system.
