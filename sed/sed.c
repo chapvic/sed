@@ -339,7 +339,7 @@ char** argv;
 			fprintf(stdout, _("super-sed version %s\n"), VERSION);
 			fprintf(stdout, _("based on GNU sed version %s\n\n"), SED_FEATURE_VERSION);
 #else
-			fprintf(stdout, _("Windows sed, version %s (Based on GNU sed)\n"), VERSION);
+			fprintf(stdout, _("Sed for Windows, version %s (Based on GNU sed)\n"), VERSION);
 #endif
 			fprintf(stdout, _("Copyright (c) %d Free Software Foundation, Inc.\n\
 Copyright (c) %s FoxTeam\n\n\
