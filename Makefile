@@ -1,10 +1,8 @@
 CC = cl
-AR = lib
 LD = link
 
 SED     = sed.exe
-OBJS_GL = gnulib.obj
-OBJS    = compile.obj execute.obj fmt.obj mbcs.obj regexp.obj sed.obj utils.obj
+OBJS    = compile.obj execute.obj fmt.obj mbcs.obj regexp.obj sed.obj utils.obj gnulib.obj
 
 CFLAGS  = /c /nologo /O2 /W3 /MT /MP /EHsc /GS /GL /GA /GT /Zo- \
 	/wd4267 /wd4244 /wd4018 /wd4311 /wd4312 /wd4005 /wd4028 /wd4133 \
@@ -14,8 +12,8 @@ LDFLAGS = /nologo /release /version:4.2 /ltcg /out:$(SED)
 
 all:	$(SED) clean
 
-$(SED):	$(OBJS_GL) $(OBJS)
-	$(LD) $(LDFLAGS) $(OBJS) $(OBJS_GL)
+$(SED):	$(OBJS)
+	$(LD) $(LDFLAGS) $(OBJS)
 
 .c.obj::
 	$(CC) $(CFLAGS) /I "gnulib" $<
